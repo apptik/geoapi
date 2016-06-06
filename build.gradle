@@ -1,0 +1,39 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    group = GROUP
+    version = VERSION_NAME
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven {
+            url 'http://oss.sonatype.org/content/repositories/snapshots'
+        }
+    }
+}
+
+ext {
+    minSdkVersion = 15
+    compileSdkVersion = 23
+    buildToolsVersion = '23.0.3'
+    jusJava = 'io.apptik.comm:jus-java:0.6.6-SNAPSHOT'
+    jjson = 'io.apptik.json:json-core:1.0.3'
+    jjsonWrapper = 'io.apptik.json:json-wrapper:1.0.3'
+    mapsforgeCore = 'org.mapsforge:mapsforge-core:0.6.0'
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,9 @@
+apply plugin: 'java'
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+
+    compile rootProject.ext.jusJava
+    compile rootProject.ext.jjson
+    compile rootProject.ext.mapsforgeCore
+}
