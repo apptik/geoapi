@@ -1,4 +1,7 @@
 package io.apptik.geoapi;
 
-public class MyClass {
+
+public interface Api {
+
+
 }

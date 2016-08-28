@@ -5,7 +5,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.0'
+        classpath 'com.android.tools.build:gradle:2.1.2'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -26,11 +26,19 @@ allprojects {
 
 ext {
     minSdkVersion = 15
-    compileSdkVersion = 23
-    buildToolsVersion = '23.0.3'
-    jusJava = 'io.apptik.comm:jus-java:0.6.6-SNAPSHOT'
-    jjson = 'io.apptik.json:json-core:1.0.3'
-    jjsonWrapper = 'io.apptik.json:json-wrapper:1.0.3'
+    compileSdkVersion = 24
+    buildToolsVersion = '24.0.1'
+
+    supportAnnotations = 'com.android.support:support-annotations:24.1.1'
+    supportV4 = 'com.android.support:support-v4:24.1.1'
+    supportRecyclerView = 'com.android.support:recyclerview-v7:24.1.1'
+    supportCardView = 'com.android.support:cardview-v7:24.1.1'
+    supportAppCompat = 'com.android.support:appcompat-v7:24.1.1'
+    supportDesign = 'com.android.support:design:24.1.1'
+
+    jusJava = 'io.apptik.comm:jus-java:0.6.9-SNAPSHOT'
+    jjson = 'io.apptik.json:json-core:1.0.4-SNAPSHOT'
+    jjsonWrapper = 'io.apptik.json:json-wrapper:1.0.4-SNAPSHOT'
     mapsforgeCore = 'org.mapsforge:mapsforge-core:0.6.0'
 }
 
